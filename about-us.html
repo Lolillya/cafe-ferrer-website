@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café Ferrer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <section>
+        <div style="display: flex">
+          <img
+            src="./img/logo.png"
+            width="70"
+            style="object-fit: cover; display: absolute"
+          />
+          <h1 class="logo-text">Café Ferrer</h1>
+        </div>
+
+        <div>
+          <ul class="header-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About us</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <div style="gap: 14px; align-items: center" id="login-content">
+              <li><a href="rewards.html">Rewards</a></li>
+              <li>
+                <a href="login.html"><button>Login</button></a>
+              </li>
+              <li>
+                <a href="signup.html"><button>Join now</button></a>
+              </li>
+            </div>
+
+            <div id="loggedIn-content" class="dropdown">
+              <button class="dropbtn">Hello, User!</button>
+              <div class="dropdown-content">
+                <span onclick="logOut()">Logout</span>
+                <a href="rewards.html">
+                  <span>Rewards</span>
+                </a>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <div class="main-container">
+        <section class="main-hero">
+          <div class="main-hero-left-wrap hero-content">
+            <div>
+              <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+            </div>
+
+            <div>
+              <p>
+                lorep ipsum st amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua
+              </p>
+            </div>
+
+            <div>
+              <button>Order now</button>
+              <button>Main Menu</button>
+            </div>
+          </div>
+
+          <div class="main-hero-right-wrap hero-content">
+            <div>
+              <img
+                src="./img/427776329_418046550762477_5392429420832625435_n.jpg"
+                class="hero-content"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="main-hero">
+          <div class="main-hero-right-wrap hero-content">
+            <div>
+              <img
+                src="./img/426898156_417299670837165_3483772948786519622_n.jpg"
+                class="hero-content"
+              />
+            </div>
+          </div>
+          <div class="main-hero-left-wrap hero-content">
+            <div>
+              <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h1>
+            </div>
+
+            <div>
+              <p>
+                lorep ipsum st amet, consectetur adipiscing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua
+              </p>
+            </div>
+
+            <div>
+              <button>Learn more</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="best-seller">
+          <div>
+            <h1>Best Sellers</h1>
+            <div class="card-wrapper">
+              <div class="seller-card">
+                <img
+                  src="./img/chocolatecookiefrappe_1024x1024.webp"
+                  width="300px"
+                />
+                <div class="seller-card-content">
+                  <span>Name: </span>
+                  <span>Price: </span>
+                  <span>Description</span>
+                </div>
+              </div>
+
+              <div class="seller-card">
+                <img src="./img/darkchocolatefrappe.webp" width="300px" />
+                <div class="seller-card-content">
+                  <span>Name: </span>
+                  <span>Price: </span>
+                  <span>Description</span>
+                </div>
+              </div>
+
+              <div class="seller-card">
+                <img
+                  src="./img/icedcaramellatter_1024x1024.webp"
+                  width="300px"
+                />
+                <div class="seller-card-content">
+                  <span>Name: </span>
+                  <span>Price: </span>
+                  <span>Description</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <section class="footer-content-wrapper">
+        <div class="footer-content">
+          <h6>café ferrer</h6>
+          <hr />
+          <p style="text-align: left">
+            lorep ipsum st amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua
+          </p>
+        </div>
+
+        <div class="footer-content">
+          <h6>Useful links</h6>
+          <hr />
+          <div class="footer-content-link-wrapper">
+            <a>Your Account</a>
+            <a>Partner with us</a>
+            <a>Shipping Rates</a>
+            <a>Help</a>
+          </div>
+        </div>
+
+        <div class="footer-content">
+          <h6>Contact</h6>
+          <hr />
+          <div class="footer-content-link-wrapper">
+            <span class="footer-content-contacts">
+              <img src="./img/phone-solid.svg" width="24" /> +63 988 777 4422
+            </span>
+            <span class="footer-content-contacts">
+              <img
+                src="./img/envelope-solid.svg"
+                width="24"
+              />example-email@domain.com
+            </span>
+            <span class="footer-content-contacts">
+              <img src="./img/location-dot-solid.svg" width="24" />Davao City
+            </span>
+          </div>
+        </div>
+
+        <div class="footer-content">
+          <h6>Connect</h6>
+          <hr />
+          <div class="footer-content-link-wrapper">
+            <span class="footer-content-links">
+              <img src="./img/facebook.svg" width="24" />Facebook
+            </span>
+            <span class="footer-content-links">
+              <img src="./img/instagram.svg" width="24" />Instagram
+            </span>
+            <span class="footer-content-links">
+              <img src="./img//twitter.svg" width="24" />Twitter
+            </span>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+
+  <script src="./scripts/script.js"></script>
+</html>

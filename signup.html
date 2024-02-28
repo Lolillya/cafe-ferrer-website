@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <section>
+        <a href="index.html">
+          <div style="display: flex">
+            <img
+              src="./img/logo.png"
+              width="70"
+              style="object-fit: cover; display: absolute"
+            />
+            <h1 class="logo-text">Café Ferrer</h1>
+          </div>
+        </a>
+
+        <!-- <div>
+          <ul class="header-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About us</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="rewards.html">Rewards</a></li>
+            <li>
+              <a href="login.html"><button>Login</button></a>
+            </li>
+            <li>
+              <a href="signup.html"><button>Join now</button></a>
+            </li>
+          </ul>
+        </div> -->
+      </section>
+    </header>
+
+    <main>
+      <form onsubmit="submitRegForm(event)">
+        <section class="sign-up-container">
+          <div
+            style="
+              max-width: 500px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <div>
+              <h1>Create an account</h1>
+            </div>
+
+            <div
+              style="display: flex; flex-direction: column; align-items: center"
+            >
+              <h2>Café Ferrer rewards</h2>
+              <p style="text-align: center">
+                Join Café Ferrer Rewards to earn points for free food and
+                drinks, any way you pay. Get access to mobile ordering, a
+                birthday Reward. and <u>more</u>
+              </p>
+            </div>
+          </div>
+          <div class="sign-up-wrapper">
+            <div>
+              <span>* indicates required field</span>
+
+              <div style="gap: 14px">
+                <h2>Personal Information</h2>
+                <div style="display: flex; flex-direction: column; gap: 14px">
+                  <input placeholder="* First name" name="firstname" />
+                  <input placeholder="* Last name" name="lastname" />
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 14px">
+                  <h2>Account Security</h2>
+                  <div style="display: flex; flex-direction: column">
+                    <input placeholder="* Email address" name="email" />
+                    <label>This will be your username</label>
+                  </div>
+
+                  <div style="display: flex; flex-direction: column">
+                    <input
+                      placeholder="* Password"
+                      name="password"
+                      type="password"
+                    />
+                    <label>
+                      Create a password 8 to 25 characters long that includes at
+                      least 1 uppercase and 1 lowercase letter, 1 number and 1
+                      special character like an exclamation point or asterisk.
+                    </label>
+                  </div>
+                </div>
+
+                <div style="display: flex; flex-direction: column; gap: 14px">
+                  <h3>Collect more points & earn rewards</h3>
+                  <span
+                    >Email is a great way to know about offers and what's new
+                    from Café Ferrer.</span
+                  >
+
+                  <div style="display: flex; gap: 14px">
+                    <div>
+                      <input type="checkbox" name="newsletter" />
+                    </div>
+                    <div
+                      style="display: flex; flex-direction: column; gap: 24px"
+                    >
+                      <span>Yes, I'd like email from Café Ferrer</span>
+                      <span>
+                        Know about initiatives, annoucements and product offers.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <h3>Terms of use</h3>
+
+                  <div style="display: flex; gap: 14px">
+                    <div>
+                      <input type="checkbox" name="termsOfUse" />
+                    </div>
+                    <div>
+                      <label>
+                        * I agree to the <a>Café Ferrer Rewards Terms</a> and
+                        have read the <a>Café Ferrer Privacy Statement</a>.
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div style="float: right; margin: 24px 14px">
+                  <div>
+                    <button style="font-size: 1.2em" type="submit">
+                      Create account
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </form>
+    </main>
+
+    <footer>
+      <section class="footer-content-wrapper">
+        <div class="footer-content">
+          <h6>café ferrer</h6>
+          <hr />
+          <p style="text-align: left">
+            lorep ipsum st amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua
+          </p>
+        </div>
+
+        <div class="footer-content">
+          <h6>Useful links</h6>
+          <hr />
+          <div class="footer-content-link-wrapper">
+            <a>Your Account</a>
+            <a>Partner with us</a>
+            <a>Shipping Rates</a>
+            <a>Help</a>
+          </div>
+        </div>
+
+        <div class="footer-content">
+          <h6>Contact</h6>
+          <hr />
+          <div class="footer-content-link-wrapper">
+            <span class="footer-content-contacts">
+              <img src="./img/phone-solid.svg" width="24" /> +63 988 777 4422
+            </span>
+            <span class="footer-content-contacts">
+              <img
+                src="./img/envelope-solid.svg"
+                width="24"
+              />example-email@domain.com
+            </span>
+            <span class="footer-content-contacts">
+              <img src="./img/location-dot-solid.svg" width="24" />Davao City
+            </span>
+          </div>
+        </div>
+
+        <div class="footer-content">
+          <h6>Connect</h6>
+          <hr />
+          <div class="footer-content-link-wrapper">
+            <span class="footer-content-links">
+              <img src="./img/facebook.svg" width="24" />Facebook
+            </span>
+            <span class="footer-content-links">
+              <img src="./img/instagram.svg" width="24" />Instagram
+            </span>
+            <span class="footer-content-links">
+              <img src="./img//twitter.svg" width="24" />Twitter
+            </span>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+
+  <script src="./scripts/script.js"></script>
+</html>

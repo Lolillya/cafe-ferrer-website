@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café Ferrer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <section>
+        <div style="display: flex">
+          <img
+            src="./img/logo.png"
+            width="70"
+            style="object-fit: cover; display: absolute"
+          />
+          <h1 class="logo-text">Café Ferrer</h1>
+        </div>
+
+        <div>
+          <ul class="header-links">
+            <li><a href="index.html">Home</a></li>
+            <!-- <li><a href="about-us.html">About us</a></li> -->
+            <li><a href="shop.html">Shop</a></li>
+            <div style="gap: 14px; align-items: center" id="login-content">
+              <li><a href="rewards.html">Rewards</a></li>
+              <li>
+                <a href="login.html"><button>Login</button></a>
+              </li>
+              <li>
+                <a href="signup.html"><button>Join now</button></a>
+              </li>
+            </div>
+
+            <div id="loggedIn-content" class="dropdown">
+              <button class="dropbtn">Hello, User!</button>
+              <div class="dropdown-content">
+                <span onclick="logOut()">Logout</span>
+                <a href="rewards.html">
+                  <span>Rewards</span>
+                </a>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </section>
+    </header>
+
+    <!-- MAIN CONTENT -->
+
+    <main>
+      <section class="rewards-hero">
+        <div class="rewards-hero-backdrop">
+          <div class="rewards-hero-content-wrapper">
+            <h2>free coffee is a tap away</h2>
+            <div>
+              <span>Join now to start earning Rewards.</span>
+              <div>
+                <a href="signup.html">
+                  <button>Join now</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="rewards-getStarted">
+        <div
+          style="
+            max-width: 80vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          "
+        >
+          <div class="rewards-getStarted-header">
+            <h2>Getting started is easy</h2>
+            <span>Earn Points and get rewarded in a few easy steps.</span>
+          </div>
+
+          <div
+            style="
+              display: flex;
+              gap: 30px;
+              padding: 15px;
+              flex-wrap: wrap;
+              justify-content: center;
+            "
+          >
+            <div class="rewards-getStarted-card">
+              <h3>1</h3>
+              <h2>Create an account</h2>
+              <p>
+                To get started, <span>join now.</span> You can also
+                <span>join in the app</span> to get access to the full range of
+                Cafe Ferrer Rewards benefits.
+              </p>
+            </div>
+
+            <div class="rewards-getStarted-card">
+              <h3>2</h3>
+              <h2>Order and pay how you'd like</h2>
+              <p>
+                Use cash, credit/debit card or save some time and pay right
+                through the app. You'll collect Stars all ways.
+                <span>Learn how</span>
+              </p>
+            </div>
+
+            <div class="rewards-getStarted-card">
+              <h3>3</h3>
+              <h2>Earn Points, get Rewards</h2>
+              <p>
+                As you earn Stars, you can redeem them for Rewards - like free
+                food, drinks, and more. Start redeeming with as little as 24
+                Stars!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="rewards-points-wrapper">
+        <div>
+          <h2>Get your favorites for free</h2>
+          <div style="display: flex; gap: 20px; justify-content: center">
+            <h2>25</h2>
+            <h2>100</h2>
+            <h2>200</h2>
+            <h2>300</h2>
+            <h2>400</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="rewards-freebies-wrapper">
+        <div class="rewards-freebies-content">
+          <img src="./img/chocolatecookiefrappe_1024x1024.webp" />
+          <div style="max-width: 375px">
+            <h2>Customize your drink</h2>
+            <span>
+              Make your drink just right with an extra espresso shot, nondairy
+              milk or a dash of your favorite syrup.</span
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <section class="footer-content-wrapper">
+        <div class="footer-content">
+          <h6>café ferrer</h6>
+          <hr />
+          <p style="text-align: left">
+            lorep ipsum st amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua
+          </p>
+        </div>
+
+        <div class="footer-content">
+          <h6>Useful links</h6>
+          <hr />
+          <div class="footer-content-link-wrapper">
+            <a>Your Account</a>
+            <a>Partner with us</a>
+            <a>Shipping Rates</a>
+            <a>Help</a>
+          </div>
+        </div>
+
+        <div class="footer-content">
+          <h6>Contact</h6>
+          <hr />
+          <div class="footer-content-link-wrapper">
+            <span class="footer-content-contacts">
+              <img src="./img/phone-solid.svg" width="24" /> +63 988 777 4422
+            </span>
+            <span class="footer-content-contacts">
+              <img
+                src="./img/envelope-solid.svg"
+                width="24"
+              />example-email@domain.com
+            </span>
+            <span class="footer-content-contacts">
+              <img src="./img/location-dot-solid.svg" width="24" />Davao City
+            </span>
+          </div>
+        </div>
+
+        <div class="footer-content">
+          <h6>Connect</h6>
+          <hr />
+          <div class="footer-content-link-wrapper">
+            <span class="footer-content-links">
+              <img src="./img/facebook.svg" width="24" />Facebook
+            </span>
+            <span class="footer-content-links">
+              <img src="./img/instagram.svg" width="24" />Instagram
+            </span>
+            <span class="footer-content-links">
+              <img src="./img//twitter.svg" width="24" />Twitter
+            </span>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+
+  <script src="scripts/script.js"></script>
+</html>
