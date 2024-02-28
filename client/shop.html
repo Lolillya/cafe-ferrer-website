@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Café Ferrer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <section>
+        <div style="display: flex">
+          <img
+            src="./img/logo.png"
+            width="70"
+            style="object-fit: cover; display: absolute"
+          />
+          <h1 class="logo-text">Café Ferrer</h1>
+        </div>
+
+        <div>
+          <ul class="header-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-us.html">About us</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <div style="gap: 14px; align-items: center" id="login-content">
+              <li><a href="rewards.html">Rewards</a></li>
+              <li>
+                <a href="login.html"><button>Login</button></a>
+              </li>
+              <li>
+                <a href="signup.html"><button>Join now</button></a>
+              </li>
+            </div>
+
+            <div id="loggedIn-content" class="dropdown">
+              <button class="dropbtn">Hello, User!</button>
+              <div class="dropdown-content">
+                <span onclick="logOut()">Logout</span>
+                <a href="rewards.html">
+                  <span>Rewards</span>
+                </a>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section>
+        <ul
+          style="
+            display: flex;
+            list-style-type: none;
+            margin: 0;
+            background-color: #dbc1ac;
+          "
+          class="shop-cat"
+          id="list"
+        >
+          <li style="padding: 14px" id="coffee-cat">Coffee</li>
+          <li style="padding: 14px" id="milktea-cat">Milktea</li>
+          <li style="padding: 14px" id="food-cat">Food</li>
+          <li style="padding: 14px" id="merch-cat">Merchandise</li>
+        </ul>
+      </section>
+      <div class="shop-container">
+        <section class="shop-main-menu">
+          <div style="display: flex">
+            <h2 id="coffee">Coffees</h2>
+            <h2 id="milktea" style="display: none">Milktea</h2>
+            <h2 id="food" style="display: none">Food</h2>
+            <h2 id="merch" style="display: none">Merchandise</h2>
+          </div>
+          <div class="shop-card-wrapper">
+            <div class="shop-card">
+              <img
+                src="./img/chocolatecookiefrappe_1024x1024.webp"
+                width="200px"
+              />
+              <span>Name: </span>
+              <span>Price: </span>
+              <span>Desc</span>
+            </div>
+
+            <div class="shop-card">
+              <img
+                src="./img/chocolatecookiefrappe_1024x1024.webp"
+                width="200px"
+              />
+              <span>Name: </span>
+              <span>Price: </span>
+              <span>Desc</span>
+            </div>
+
+            <div class="shop-card">
+              <img
+                src="./img/chocolatecookiefrappe_1024x1024.webp"
+                width="200px"
+              />
+              <span>Name: </span>
+              <span>Price: </span>
+              <span>Desc</span>
+            </div>
+
+            <div class="shop-card">
+              <img
+                src="./img/chocolatecookiefrappe_1024x1024.webp"
+                width="200px"
+              />
+              <span>Name: </span>
+              <span>Price: </span>
+              <span>Desc</span>
+            </div>
+
+            <div class="shop-card">
+              <img
+                src="./img/chocolatecookiefrappe_1024x1024.webp"
+                width="200px"
+              />
+              <span>Name: </span>
+              <span>Price: </span>
+              <span>Desc</span>
+            </div>
+
+            <div class="shop-card">
+              <img
+                src="./img/chocolatecookiefrappe_1024x1024.webp"
+                width="200px"
+              />
+              <span>Name: </span>
+              <span>Price: </span>
+              <span>Desc</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="shop-cart-total">
+          <div>
+            <div class="shop-cart-wrapper">
+              <h3>Cart</h3>
+              <input style="padding: 10px" />
+            </div>
+
+            <div class="shop-cart-wrapper">
+              <h3>Cart is empty</h3>
+            </div>
+
+            <hr />
+            <div class="shop-cart-wrapper">
+              <label id="shop-total">Total : </label>
+              <input name="shop-total" style="padding: 10px" />
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+
+  <script src="./scripts/script.js"></script>
+</html>
